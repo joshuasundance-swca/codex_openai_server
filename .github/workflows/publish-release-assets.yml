@@ -111,7 +111,7 @@ jobs:
             dist/SHA256SUMS
           if-no-files-found: error
 
-  verify-python-310-distributions:
+  verify-python-314-distributions:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -138,7 +138,7 @@ jobs:
       - name: Build distributions on Python 3.14
         run: python -m build
 
-      - name: Validate Python 3.10 distribution metadata
+      - name: Validate Python 3.14 distribution metadata
         run: python -m twine check --strict dist/*
 
   publish-release:
