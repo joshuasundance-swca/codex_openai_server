@@ -1,0 +1,41 @@
+changelog:
+  exclude:
+    labels:
+      - duplicate
+      - invalid
+      - wontfix
+      - ignore-for-release
+
+  categories:
+    - title: ⚠️ Breaking changes
+      labels:
+        - breaking-change
+        - breaking
+    - title: 🚀 Features
+      labels:
+        - enhancement
+        - feature
+    - title: 🐛 Bug fixes
+      labels:
+        - bug
+        - fix
+    - title: 📝 Documentation
+      labels:
+        - documentation
+        - docs
+    - title: 🧪 Testing
+      labels:
+        - testing
+        - tests
+    - title: 🔧 CI / Build
+      labels:
+        - ci
+        - build
+        - infrastructure
+    - title: 📦 Dependencies
+      labels:
+        - dependencies
+        - deps
+    - title: Other changes
+      labels:
+        - "*"
